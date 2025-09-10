@@ -16,7 +16,7 @@ docker run lokalize
 ### Option 2: Local Development
 ```bash
 # Install dependencies
-pip install -e .
+pip install -r requirements.txt
 
 # Run demo
 python quickstart.py
@@ -96,6 +96,15 @@ python quickstart.py
 ```
 
 ## 🔧 AWS Setup (For Production)
+
+### 0. Install Dependencies
+```bash
+# Core dependencies
+pip install -r requirements.txt
+
+# Development dependencies (optional)
+pip install -r requirements-dev.txt
+```
 
 ### 1. Create Bedrock Knowledge Base
 ```bash
